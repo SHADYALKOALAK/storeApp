@@ -1,11 +1,20 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
+import 'package:storeonline/providers/cache/cache_controller.dart';
 import 'package:storeonline/providers/language_provider.dart';
 import 'package:storeonline/screens/splash_screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  /// Cache
+  await CacheController().initCache;
+
+  /// Firebase
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
