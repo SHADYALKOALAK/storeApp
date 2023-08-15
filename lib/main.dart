@@ -46,7 +46,7 @@ class MyMaterialApp extends StatelessWidget {
       builder: (context, lang, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(primaryColor: const Color(0xff40BFFF)),
+          theme: ThemeData(primaryColor: const Color(0xffFF725E)),
           home: const SplashScreen(),
           locale: Locale(lang.language),
           localizationsDelegates: AppLocalizations.localizationsDelegates,
