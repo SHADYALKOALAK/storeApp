@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "454712663602",
+    "project_id": "store-app-online",
+    "storage_bucket": "store-app-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454712663602:android:182c556949dc1ab4f2a62b",
+        "android_client_info": {
+          "package_name": "com.appshady.storeonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454712663602-d6b5qurg2p01neo67ibppd5fga3vtd1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXnT-VQR_0PMHVJnZcp_mk8jVLJRA8fSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454712663602-d6b5qurg2p01neo67ibppd5fga3vtd1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
