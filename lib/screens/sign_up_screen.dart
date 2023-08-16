@@ -1,4 +1,3 @@
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -120,7 +119,6 @@ class _SignUpScreenState extends State<SignUpScreen> with NavHelper, ChickData {
                       Checkbox(
                         value: chickBox,
                         onChanged: (value) => setState(() => chickBox = value!),
-                        focusColor: Colors.cyanAccent,
                         activeColor: Theme.of(context).primaryColor,
                       ),
                       Expanded(child: Text(localizations.policy))
