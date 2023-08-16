@@ -5,7 +5,7 @@ import 'package:storeonline/enums.dart';
 import 'package:storeonline/firebase/users_fb_controller.dart';
 import 'package:storeonline/providers/auth_provider.dart';
 import 'package:storeonline/providers/cache/cache_controller.dart';
-import 'package:storeonline/screens/home_page_screen.dart';
+import 'package:storeonline/screens/bnb/home_page_screen.dart';
 import 'package:storeonline/screens/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
