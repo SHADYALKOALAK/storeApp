@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:storeonline/screens/bnb/bag_screen.dart';
+import 'package:storeonline/screens/bnb/favourits_screen.dart';
+import 'package:storeonline/screens/bnb/home_page_screen.dart';
+import 'package:storeonline/screens/bnb/person_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -11,6 +15,14 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+
+      body: [
+        HomePageScreen(),
+        BagScreen(),
+        FavouritsScreen(),
+        PersonScreen(),
+      ][selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
         onTap: (_) => setState(() => selectedIndex = _),
