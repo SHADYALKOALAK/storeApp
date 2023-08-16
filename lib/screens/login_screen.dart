@@ -103,11 +103,16 @@ class _LoginScreenState extends State<LoginScreen> with NavHelper, ChickData {
                             fontSize: 14.sp,
                           )),
                     ),
-                    Text(localizations.gust,
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14.sp,
-                        )),
+                    InkWell(
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      onTap: () => gust(),
+                      child: Text(localizations.gust,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 14.sp,
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -174,6 +179,14 @@ class _LoginScreenState extends State<LoginScreen> with NavHelper, ChickData {
       return false;
     } else {
       return true;
+    }
+  }
+
+  void gust() {
+    var user = FbAuthController().loginAsVisitor();
+    if (user != null) {
+      jump(context, const HomePageScreen(), true);
+      showSnackBar(context, 'Logged In Successfully!', false);
     }
   }
 }
