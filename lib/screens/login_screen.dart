@@ -8,7 +8,7 @@ import 'package:storeonline/firebase/fb_auth_controller.dart';
 import 'package:storeonline/firebase/users_fb_controller.dart';
 import 'package:storeonline/providers/auth_provider.dart';
 import 'package:storeonline/providers/cache/cache_controller.dart';
-import 'package:storeonline/screens/home_page_screen.dart';
+import 'package:storeonline/screens/bnb/home_page_screen.dart';
 import 'package:storeonline/screens/main_screen_login.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:storeonline/screens/sign_up_screen.dart';
@@ -103,11 +103,16 @@ class _LoginScreenState extends State<LoginScreen> with NavHelper, ChickData {
                             fontSize: 14.sp,
                           )),
                     ),
-                    Text(localizations.gust,
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 14.sp,
-                        )),
+                    InkWell(
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      onTap: () => gust(),
+                      child: Text(localizations.gust,
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 14.sp,
+                          )),
+                    ),
                   ],
                 ),
               ),
@@ -174,6 +179,14 @@ class _LoginScreenState extends State<LoginScreen> with NavHelper, ChickData {
       return false;
     } else {
       return true;
+    }
+  }
+
+  void gust() {
+    var user = FbAuthController().loginAsVisitor();
+    if (user != null) {
+      jump(context, const HomePageScreen(), true);
+      showSnackBar(context, 'Logged In Successfully!', false);
     }
   }
 }
