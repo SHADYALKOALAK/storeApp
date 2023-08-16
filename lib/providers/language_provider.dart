@@ -4,7 +4,7 @@ import 'package:storeonline/providers/cache/cache_controller.dart';
 
 
 class LanguageProvider extends ChangeNotifier {
-  String language = CacheController().getter(CacheKeys.language) ?? 'ar';
+  String language = CacheController().getter(CacheKeys.language) ?? 'en';
 
   Future<void> changeLanguage() async {
     language = language == 'ar' ? 'en' : 'ar';

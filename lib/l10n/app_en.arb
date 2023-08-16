@@ -1,2 +1,20 @@
 {
+"welcomeBack":"Welcome Back",
+"supTitel":"Create a commitment-free profile to explore products",
+"password":"Password",
+"register":"Register",
+"gust":"Gust",
+"login":"login",
+"letGetStarted":"Let's Get Started",
+"cPassword":"Confirm Password",
+"userName":"User Name",
+"policy":"I agree with the Terms of Services & Privacy Policy",
+"pleaseEnterCorrectEmail":"Please Enter Correct Email",
+"passwordMusterLongerThanCharacters":"Password must be longer than 6 characters",
+"pleaseEnterYourConfirmPassword":"Please Enter Your Confirm Password",
+"pleaseEnterYourEmail":"Please Enter Your Email",
+"pleaseEnterYourPassword":"please Enter Your Password",
+"makeSureThePasswordMatches":"Make Sure The Password Matches",
+"pleaseEnterYourFullName":"Please Enter Your FullName",
+"email":"Email  / Phone Number"
 }

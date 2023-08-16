@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
+import 'package:storeonline/providers/auth_provider.dart';
 import 'package:storeonline/providers/cache/cache_controller.dart';
 import 'package:storeonline/providers/language_provider.dart';
 import 'package:storeonline/screens/splash_screen.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         return MultiProvider(
           providers: [
             ChangeNotifierProvider(create: (_) => LanguageProvider()),
+            ChangeNotifierProvider(create: (_) => AuthProvider()),
           ],
           child: const MyMaterialApp(),
         );
@@ -46,7 +48,9 @@ class MyMaterialApp extends StatelessWidget {
       builder: (context, lang, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          theme: ThemeData(primaryColor: const Color(0xffFF725E)),
+          theme: ThemeData(
+            primaryColor: const Color(0xffEFF422),
+          ),
           home: const SplashScreen(),
           locale: Locale(lang.language),
           localizationsDelegates: AppLocalizations.localizationsDelegates,

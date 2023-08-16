@@ -1,2 +1,20 @@
 {
+"welcomeBack":"مرحبًا بعودتك",
+"supTitel":"قم بإنشاء ملف تعريف خالٍ من الالتزامات لاستكشاف المنتجات",
+"password":"كلمة المرور",
+"cPassword":"تاكيد كلمة المرور",
+"register":"تسجيل جديد ",
+"gust":"زائر",
+"login":"تسجيل جديد",
+"letGetStarted":"هيا بنا نبدأ",
+"userName":"إسم المستخدم",
+"passwordMusterLongerThanCharacters":"يجب أن تكون كلمة المرور أطول من 6 أحرف",
+"pleaseEnterYourConfirmPassword":"من فضلك أدخل تأكيد  كلمة المرور",
+"makeSureThePasswordMatches":"تأكد من تطابق كلمة المرور",
+"pleaseEnterYourFullName":"من فضلك أدخل إسمك الكامل",
+"pleaseEnterYourEmail":"من فضلك أدخل الإلكتروني",
+"pleaseEnterYourPassword":"من فضلك أدخل كلمة المرور",
+"policy":"أوافق على شروط الخدمات وسياسة الخصوصية",
+"email":"البريد الإلكتروني / رقم الهاتف"
+
 }
