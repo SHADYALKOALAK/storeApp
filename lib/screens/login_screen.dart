@@ -145,7 +145,7 @@ class _LoginScreenState extends State<LoginScreen> with NavHelper, ChickData {
           email: emailEditingController.text,
           password: passwordEditingController.text);
 
-      if (authStatus == null) throw Exception('Auth Error!');
+      if (authStatus == null) throw Exception('Auth Error !!');
 
       /// Save Login
       await CacheController().setter(CacheKeys.loggedIn, true);
