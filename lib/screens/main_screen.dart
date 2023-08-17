@@ -21,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
         HomePageScreen(),
         BagScreen(),
         FavouritsScreen(),
-        PersonScreen(),
+
       ][selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
